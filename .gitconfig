@@ -1,0 +1,22 @@
+[user]
+	name = shichan
+  email = chan.shiela+work@gmail.com
+[color]
+  ui = true
+[alias]
+  ch = checkout
+  cm = commit
+  st = status
+  br = branch 
+  hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
+  type = cat-file -t
+  dump = cat-file -p
+  undo = reset HEAD~1 --mixed
+  #add all changes included untracked files & creates a commit
+  save = !git add -A && git commit -m 'SAVEPOINT'
+  #instead of git reset HEAD --hard
+  wipe = !git add -A && git commit -qm 'WIPE SAVEPOINT' && git reset HEAD~1 --hard
+[core]
+	editor = /usr/bin/vim
+[diff]
+	compactionHeuristic = true
