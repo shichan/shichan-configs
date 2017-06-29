@@ -1,5 +1,5 @@
 [user]
-	name = shichan
+  name = shichan
   email = chan.shiela+work@gmail.com
 [color]
   ui = true
@@ -17,6 +17,6 @@
   #instead of git reset HEAD --hard
   wipe = !git add -A && git commit -qm 'WIPE SAVEPOINT' && git reset HEAD~1 --hard
 [core]
-	editor = /usr/bin/vim
+  editor = /usr/bin/vim
 [diff]
-	compactionHeuristic = true
+  compactionHeuristic = true
